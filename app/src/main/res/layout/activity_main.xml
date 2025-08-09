@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient">
+
+    <!-- Heading section -->
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="After Schooling"
+            android:textColor="#26336B"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Your Career Path Begins Here"
+            android:textColor="#6E6E6E"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Buttons stacked vertically -->
+    <LinearLayout
+        android:id="@+id/button_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_header"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnIntermediate"
+            style="@style/MenuButtonStyle"
+            android:layout_width="164dp"
+            android:layout_marginBottom="16dp"
+            android:text="Inter" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDiploma"
+            style="@style/MenuButtonStyle"
+            android:layout_width="166dp"
+            android:layout_marginBottom="16dp"
+            android:text="Diploma" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnIIIT"
+            style="@style/MenuButtonStyle"
+            android:layout_width="163dp"
+            android:layout_marginBottom="16dp"
+            android:text="IIIT" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnITI"
+            style="@style/MenuButtonStyle"
+            android:layout_width="163dp"
+            android:text="ITI" />
+    </LinearLayout>
+</RelativeLayout>
